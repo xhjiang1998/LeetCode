@@ -1,4 +1,4 @@
-package xhjiang.leetcode.day01;
+package xhjiang.leetcode.week01.day01;
 
 import java.util.HashMap;
 import java.util.Map;

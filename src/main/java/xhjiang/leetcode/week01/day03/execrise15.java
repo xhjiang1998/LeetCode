@@ -1,4 +1,4 @@
-package xhjiang.leetcode.day03;
+package xhjiang.leetcode.week01.day03;
 
 import java.util.ArrayList;
 import java.util.Arrays;

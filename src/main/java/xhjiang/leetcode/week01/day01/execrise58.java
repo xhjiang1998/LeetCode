@@ -1,4 +1,4 @@
-package xhjiang.leetcode.day01;
+package xhjiang.leetcode.week01.day01;
 
 public class execrise58 {
     public int lengthOfLastWord(String s) {

@@ -1,4 +1,4 @@
-package xhjiang.leetcode.day02;
+package xhjiang.leetcode.week01.day02;
 
 /**
  * @description: 找出字符串中第一个匹配项的下标

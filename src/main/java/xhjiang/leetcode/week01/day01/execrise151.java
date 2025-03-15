@@ -1,4 +1,4 @@
-package xhjiang.leetcode.day01;
+package xhjiang.leetcode.week01.day01;
 
 /**
  * @description: 反转字符串中的单词
