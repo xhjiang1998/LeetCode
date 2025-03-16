@@ -46,9 +46,8 @@ public class execrise23 {
     private ListNode mergeTwoListNode(ListNode n1, ListNode n2) {
         //如何将两个有序链表合并成一个有序链表？
         ListNode dummy=new ListNode();  //头节点
-        ListNode tmp=new ListNode();    //遍历节点
-        dummy.next=tmp;
-        while(n1.next!=null&&n2.next!=null){
+        ListNode tmp=dummy;    //遍历节点
+        while(n1!=null&&n2!=null){
             if (n1.val<n2.val){
                 tmp.next=n1;
                 n1=n1.next;
@@ -59,10 +58,10 @@ public class execrise23 {
             }
             tmp=tmp.next;
         }
-        if (n1.next==null){
+        if (n1==null){
             tmp.next=n2;
         }
-        if (n2.next==null){
+        if (n2==null){
             tmp.next=n1;
         }
         return dummy.next;
