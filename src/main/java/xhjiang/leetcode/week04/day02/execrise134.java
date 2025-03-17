@@ -18,8 +18,8 @@ public class execrise134 {
         int curGas=0;
         int start=0;
         for (int i = 0; i < gas.length; i++) {
-                totalGas+=gas[i];//总油量
-                curGas+=gas[i]-cost[i];
+                totalGas+=gas[i]-cost[i];//全程的油量剩余，最后可直接判断是否大于或小于0来表明能否走完全程
+                curGas+=gas[i]-cost[i];//用来表明从哪个节点能走完全程
                 //如果当前油量小于0，那么就直接从下一个点开始
                 if (curGas<0){
                     start=i+1;
@@ -27,6 +27,28 @@ public class execrise134 {
                 }
         }
         return totalGas>=0?start:-1;
+    }
+
+    //可读性更好的代码
+    public int canCompleteCircuit2(int[] gas, int[] cost) {
+        int startIdx = 0; // 始发站
+        int curGas = 0; // 到达下一个加油站加油之前的累计剩余油量
+        for (int i = 0; i < gas.length; i++) {
+            curGas += gas[i] - cost[i];
+            if (curGas < 0) {
+                // 走不动了, 说明之前的始发站不行，从i+1重新出发
+                startIdx = i + 1;
+                curGas = 0;
+            }
+        }
+        // 判断累计剩余油量能否走完startIdx之前的加油站
+        for (int i = 0; i < startIdx; i++) {
+            curGas += gas[i] - cost[i];
+            if (curGas < 0) {
+                return -1;
+            }
+        }
+        return startIdx;
     }
 
     public static void main(String[] args) {
