@@ -48,7 +48,7 @@ public class ThreadTest {
 
     // 填充桶内令牌
     public void refillTokens(int capacity, int refillRate){
-        long now=System.currentTimeMillis();
+        long now = System.currentTimeMillis();
         //  每秒添加的令牌数量
         long elseps=(now-lastUpdateTime)/1000;
         int addToken=(int) (elseps*refillRate);
