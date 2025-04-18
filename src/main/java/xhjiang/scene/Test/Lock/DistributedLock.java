@@ -1,4 +1,4 @@
-package xhjiang.scene;
+package xhjiang.scene.Test.Lock;
 
 import redis.clients.jedis.Jedis;
 

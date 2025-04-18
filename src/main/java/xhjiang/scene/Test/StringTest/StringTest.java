@@ -1,4 +1,4 @@
-package xhjiang.scene;
+package xhjiang.scene.Test.StringTest;
 
 import org.junit.Test;
 

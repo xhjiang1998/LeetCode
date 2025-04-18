@@ -1,4 +1,4 @@
-package xhjiang.scene;
+package xhjiang.scene.Test.CallBack;
 
 import xhjiang.scene.api.CallBack;
 
