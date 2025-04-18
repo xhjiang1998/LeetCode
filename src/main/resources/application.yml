@@ -1,0 +1,39 @@
+server:
+  port: 8888
+spring:
+  dynamic:
+    tp:
+      enabled: true
+      enabled-banner: true
+      enabled-collect: false
+      collector-types: micrometer,logging
+      log-path: ./logs
+      monitor-interval: 5
+      platforms:
+        - platform: email
+          receivers: 3356569649@qq.com
+      executors:
+        - thread-pool-name: regExecutor
+          thread-pool-alias-name: 江旭晖动态线程池测试
+          executor-type: common
+          core-pool-size: 8
+          maximum-pool-size: 50
+          queue-capacity: 200
+          queue-type: VariableLinkedBlockingQueue
+          rejected-handler-type: AbortPolicy
+          keep-alive-time: 50
+  mail:
+    title: X ThreadPool Notify
+    host: smtp.qq.com
+    port: 465
+    username: 3356569649@qq.com
+    password: rhjuoexfiuipcihf
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+          ssl:
+            enable: true
+          debug: false
+
