@@ -1,9 +1,10 @@
 package xhjiang.scene.DesignModel.SimpleFactory;
 
 /**
- * @description: 工厂类
- * @author: xhjiang
+ * 工厂类
+ *
  * @date: 2025/2/26 10:21
+ * @author: xhjiang
  */
 public class Factory {
     public static Product createProduct(String product) {

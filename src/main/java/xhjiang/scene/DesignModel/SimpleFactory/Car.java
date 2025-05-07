@@ -1,7 +1,8 @@
 package xhjiang.scene.DesignModel.SimpleFactory;
 
 /**
- * @description: 产品：车
+ * 产品：车
+ *
  * @author: xhjiang
  * @date: 2025/2/26 10:24
  */
